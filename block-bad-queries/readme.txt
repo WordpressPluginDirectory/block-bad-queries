@@ -8,10 +8,10 @@ Author: Jeff Starr
 Author URI: https://plugin-planet.com/
 Contributors: specialk, aldolat, WpBlogHost, jameswilkes, juliobox, lernerconsult
 Donate link: https://monzillamedia.com/donate.html
-Requires at least: 5.6
-Tested up to: 6.8
-Stable tag: 20250324
-Version:    20250324
+Requires at least: 4.7
+Tested up to: 6.9
+Stable tag: 20251120
+Version:    20251120
 Requires PHP: 7.1
 Text Domain: block-bad-queries
 Domain Path: /languages
@@ -74,7 +74,34 @@ BBQ provides all the best firewall features:
 * Lightweight, fast and flexible
 
 > 🔥 For advanced protection and features, check out [BBQ Pro &raquo;](https://plugin-planet.com/bbq-pro/)
-> 🔥 BBQ = Block Bad Queries
+
+
+**Exclusive Pro Version Features**
+
+* Customize firewall via plugin settings
+* Easily add or remove firewall patterns
+* Easily add Jeff Starr's [AI Block List](https://perishablepress.com/ultimate-ai-block-list/)
+* Send Email Alerts for blocked requests
+* Quickly enable/disable firewall rules
+* Disable firewall for logged-in users
+* Block excessively long URI requests
+* Protect against XML-RPC exploits
+* Block any individual IP address
+* Block entire ranges of IP addresses
+* Protect against user-ID phishing
+* Redirect all blocked requests
+* Display a custom "blocked" message
+* Set your own response status code
+* Complete inline documentation
+* Statistics for blocked requests
+* Tools to reset options and patterns
+* Import and Export firewall patterns
+* One-click pattern testing
+* Whitelist IP addresses
+
+..plus everything the free version can do and more.
+
+> 🔥 Learn more and [get BBQ Pro &raquo;](https://plugin-planet.com/bbq-pro/)
 
 
 **Privacy**
@@ -82,6 +109,8 @@ BBQ provides all the best firewall features:
 This plugin does not collect or store any user data. It does not set any cookies, and it does not connect to any third-party locations. Thus, this plugin does not affect user privacy in any way.
 
 BBQ Firewall is developed and maintained by [Jeff Starr](https://x.com/perishable), 15-year [WordPress developer](https://plugin-planet.com/) and [book author](https://books.perishablepress.com/).
+
+> 🔥 BBQ = Block Bad Queries
 
 
 **Support development**
@@ -96,7 +125,7 @@ I develop and maintain this free plugin with love for the WordPress community. T
 
 And/or purchase one of my premium WordPress plugins:
 
-* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Super fast WordPress firewall
+* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Blazing fast WordPress firewall
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
@@ -131,7 +160,7 @@ Note that the [Pro version of BBQ](https://plugin-planet.com/bbq-pro/) makes it 
 
 **Uninstalling**
 
-This plugin cleans up after itself. All plugin settings will be removed from your database when the plugin is uninstalled via the Plugins screen.
+This plugin cleans up after itself. All plugin settings will be removed from the WordPress database when the plugin is uninstalled via the Plugins screen.
 
 
 **Like the plugin?**
@@ -142,9 +171,9 @@ If you like BBQ, please take a moment to [give a 5-star rating](https://wordpres
 
 == Upgrade Notice ==
 
-To upgrade BBQ, remove old version and replace with new version. Or just click "Update" from the Plugins screen and let WordPress do it for you automatically. Nothing else needs done.
+Visit the WordPress Plugins screen, locate the plugin, and click "Update" :)
 
-Note: uninstalling/deleting the plugin via the WP Plugins screen results in the removal of all settings and email data from the WP database.
+__Note:__ Deleting this plugin via the WordPress Plugins screen will remove all of its settings from the WordPress database.
 
 
 
@@ -259,17 +288,14 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 If you like BBQ, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/block-bad-queries/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**2025/03/24**
+**2025/11/20**
 
-* Removes `bbq_languages()` function
-* Fixes bug with `bbq_check_plugin` function
-* Renames some functions for when pro is active
-* Adds uninstall option `bbq-firewall-dismiss-notice`
-* Bumps minimum required WordPress version
-* Bumps minimum required PHP version
+* Restores `bbq_languages()` function
+* Renames expiration function `bbq_check_date_expired`
 * Updates plugin settings page
+* Improves readme.txt documentation
 * Generates new language template
-* Tests on WordPress 6.8
+* Tests on WordPress 6.9 (beta)
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/block-bad-queries.txt](https://plugin-planet.com/wp/changelog/block-bad-queries.txt)

@@ -8,10 +8,10 @@
 	Author URI: https://plugin-planet.com/
 	Contributors: specialk, aldolat, WpBlogHost, jameswilkes, juliobox, lernerconsult
 	Donate link: https://monzillamedia.com/donate.html
-	Requires at least: 5.6
-	Tested up to: 6.8
-	Stable tag: 20250324
-	Version:    20250324
+	Requires at least: 4.7
+	Tested up to: 6.9
+	Stable tag: 20251120
+	Version:    20251120
 	Requires PHP: 7.1
 	Text Domain: block-bad-queries
 	Domain Path: /languages
@@ -37,7 +37,7 @@
 
 if (!defined('ABSPATH')) die();
 
-if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20250324');
+if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20251120');
 if (!defined('BBQ_FILE'))      define('BBQ_FILE', __FILE__);
 if (!defined('BBQ_BASE_FILE')) define('BBQ_BASE_FILE', plugin_basename(__FILE__));
 if (!defined('BBQ_DIR'))       define('BBQ_DIR', plugin_dir_path(__FILE__));

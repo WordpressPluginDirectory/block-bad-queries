@@ -2,6 +2,13 @@
 
 if (!defined('ABSPATH')) exit;
 
+function bbq_languages() {
+	
+	load_plugin_textdomain('block-bad-queries', false, dirname(BBQ_BASE_FILE) .'/languages/');
+	
+}
+add_action('init', 'bbq_languages');
+
 function bbq_options() {
 	
 	$bbq_options = array(
@@ -341,18 +348,18 @@ function bbq_admin_notice() {
 	
 	if (bbq_get_screen_id() === 'settings_page_bbq_settings') {
 		
-		if (!bbq_check_date_expiration() && !bbq_dismiss_notice_check_option()) {
+		if (!bbq_check_date_expired() && !bbq_dismiss_notice_check_option()) {
 			
 			?>
 			
-			<div class="notice notice-success notice-margin notice-custom">
+			<div class="notice notice-success notice-lh">
 				<p>
-					<strong><?php esc_html_e('Spring Sale!', 'block-bad-queries'); ?></strong> 
-					<?php esc_html_e('Take 30% OFF any of our', 'block-bad-queries'); ?> 
+					<strong><?php esc_html_e('Fall Sale!', 'block-bad-queries'); ?></strong> 
+					<?php esc_html_e('Take 25% OFF any of our', 'block-bad-queries'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'block-bad-queries'); ?></a> 
 					<?php esc_html_e('and', 'block-bad-queries'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'block-bad-queries'); ?></a>. 
-					<?php esc_html_e('Apply code', 'block-bad-queries'); ?> <code>SPRING2025</code> <?php esc_html_e('at checkout. Sale ends 6/25/2025.', 'block-bad-queries'); ?> 
+					<?php esc_html_e('Apply code', 'block-bad-queries'); ?> <code>FALL2025</code> <?php esc_html_e('at checkout. Sale ends 1/11/2026.', 'block-bad-queries'); ?> 
 					<?php echo bbq_dismiss_notice_button(); ?>
 				</p>
 			</div>
@@ -431,9 +438,9 @@ function bbq_dismiss_notice_button() {
 	
 }
 
-function bbq_check_date_expiration() {
+function bbq_check_date_expired() {
 	
-	$expires = apply_filters('bbq_check_date_expiration', '2025-06-25');
+	$expires = apply_filters('bbq_check_date_expired', '2026-01-11');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	
