@@ -10,15 +10,13 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
 	Tested up to: 6.9
-	Stable tag: 20251120
-	Version:    20251120
+	Stable tag: 20260205
+	Version:    20260205
 	Requires PHP: 7.1
 	Text Domain: block-bad-queries
 	Domain Path: /languages
 	License: GPLv2 or later
-*/
-
-/*
+	
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 
@@ -32,12 +30,12 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2025 Monzilla Media. All rights reserved.
+	Copyright 2009-2026 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
 
-if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20251120');
+if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20260205');
 if (!defined('BBQ_FILE'))      define('BBQ_FILE', __FILE__);
 if (!defined('BBQ_BASE_FILE')) define('BBQ_BASE_FILE', plugin_basename(__FILE__));
 if (!defined('BBQ_DIR'))       define('BBQ_DIR', plugin_dir_path(__FILE__));

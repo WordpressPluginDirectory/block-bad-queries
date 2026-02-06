@@ -354,12 +354,9 @@ function bbq_admin_notice() {
 			
 			<div class="notice notice-success notice-lh">
 				<p>
-					<strong><?php esc_html_e('Fall Sale!', 'block-bad-queries'); ?></strong> 
-					<?php esc_html_e('Take 25% OFF any of our', 'block-bad-queries'); ?> 
-					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'block-bad-queries'); ?></a> 
-					<?php esc_html_e('and', 'block-bad-queries'); ?> 
-					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'block-bad-queries'); ?></a>. 
-					<?php esc_html_e('Apply code', 'block-bad-queries'); ?> <code>FALL2025</code> <?php esc_html_e('at checkout. Sale ends 1/11/2026.', 'block-bad-queries'); ?> 
+					<strong><?php esc_html_e('🔥 SAVE 30% on BBQ Pro!', 'block-bad-queries'); ?></strong> 
+					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/bbq-pro/"><?php esc_html_e('Dial in the perfect firewall for your site', 'block-bad-queries'); ?></a>. 
+					<?php esc_html_e('Apply code', 'block-bad-queries'); ?> <code>BBQPRO</code> <?php esc_html_e('at checkout. Lifetime licenses available. Sale ends 3/28/2026.', 'block-bad-queries'); ?> 
 					<?php echo bbq_dismiss_notice_button(); ?>
 				</p>
 			</div>
@@ -440,7 +437,7 @@ function bbq_dismiss_notice_button() {
 
 function bbq_check_date_expired() {
 	
-	$expires = apply_filters('bbq_check_date_expired', '2026-01-11');
+	$expires = apply_filters('bbq_check_date_expired', '2026-03-28');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	
